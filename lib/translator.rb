@@ -38,10 +38,10 @@ end
 
 def get_japanese_emoticon (file_path, emoji)
   new_lib = load_library(file_path)
-  binding.pry
   jap_emoti = " "
 
   new_lib.each do |n, v|
+    binding.pry
     if emoji == v[:english]  #my mistake is here I can't find why
       jap_emoti = v[:japanese]
     else
