@@ -41,7 +41,7 @@ def get_japanese_emoticon (file_path, emoji)
   jap_emoti = "Sorry, that emoticon was not found"
 
   new_lib.each do |n, v|
-    binding.pry
+    #binding.pry
     if emoji == v[:english]  #my mistake is here I can't find why
       jap_emoti = v[:japanese]
     end
