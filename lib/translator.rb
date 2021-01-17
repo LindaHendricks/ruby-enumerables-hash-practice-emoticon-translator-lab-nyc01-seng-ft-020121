@@ -23,7 +23,6 @@ end
 
 def get_english_meaning(file_path, emoji)
   new_lib = load_library(file_path)
-  binding.pry
   e_meaning = " "
   
   new_lib.each do |n, v|
