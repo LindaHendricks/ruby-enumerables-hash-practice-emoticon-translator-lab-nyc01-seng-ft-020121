@@ -42,12 +42,12 @@ def get_japanese_emoticon (file_path, emoji)
 
   new_lib.each do |n, v|
     if emoji == v[:english]  #my mistake is here I can't find why
-      return jap_emoti = n
+      jap_emoti = v[:japanese]
        else
        jap_emoti = "Sorry, that emoticon was not found"
     end
   end
-  jap_emoti
+  return jap_emoti
 end
 
 
