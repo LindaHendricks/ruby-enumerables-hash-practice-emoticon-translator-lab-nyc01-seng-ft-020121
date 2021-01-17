@@ -41,8 +41,8 @@ def get_japanese_emoticon (file_path, emoji)
   jap_emoti = " "
 
   new_lib.each do |n, v|
-    if emoji == v[:japanese]  #my mistake is here I can't find why
-      return jap_emoti = v
+    if emoji == v[:english]  #my mistake is here I can't find why
+      return jap_emoti = n
        else
        jap_emoti = "Sorry, that emoticon was not found"
     end
